@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <title>Bai 2</title>
+  </head>
+  <body>
+    <img
+      src="data:image/png;base64,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"
+      style="height: 100; width: 50"
+    />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+    suscippit est. Nulla iaculis ipsum sit ameet leo euismod maximus. Donec
+    malesuda posuere mi, nec scelerique nibh porta eu. Mauris in ultricies
+    mulla. Quisque vitae ipsum quis odio efficitur tincidunt.<br />
+    Nullam viverra a velit et sodales. Etiam eu odio quis felis pretium interdum
+    quis velit. Nullam eu justo quis mi various malesuada nec vitae magna.<br /><br />
+
+    <b>Infomation Link</b>
+    <ul>
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Pricing</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Fag</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+
+    <b>Contact Details</b>
+    <ul>
+      <li><a href="">info@yoursite.com</a></li>
+      <li><a href="">www.yoursite.com</a></li>
+      123 Nguyen Van B,HCM City, Vietnam
+      <li><a href="">+61 38376 6284</a></li>
+    </ul>
+
+    <b>Contact Details</b><br />
+    <ul>
+      <li><i class="fa-brands fa-facebook"></i> 22.543 like</li>
+      <li><i class="fa-brands fa-github"></i> 128 Project</li>
+      <li><i class="fa-brands fa-twitter"></i> 12.860 Followers</li>
+      <li><i class="fa-regular fa-location-dot"></i>3312 Shots</li>
+      <li><i class="fa-brands fa-pinterest"></i> 3331 Pins</li>
+    </ul>
+
+    ===========================================================================================================================<br />
+    <h3>
+      Hello, we are bought together the best quality services, offers, project
+      for you !
+    </h3>
+    <ul>
+      <li><i class="fa-solid fa-laptop"></i></li>
+      <b>Outstanding design</b>
+      <br />
+      Loren ipsum sit arnet, consectetur adipiscing elit. Nulla sit arnet
+      suscipit est.
+
+      <li><i class="fa-solid fa-user"></i></li>
+      <b>Responsive Laout</b>
+      <br />
+      Consectetur adipiscing elit. Nulla iaculis ipsum sit arnet leo euismod
+      maximus
+
+      <li><i class="fa-solid fa-sun"></i></li>
+      <b>Easy to use</b>
+      <br />
+      Nulla iaculis ipsum sit arnet leo euismodmaximus
+    </ul>
+
+    ============================================================================================================================<br />
+    <b>About us</b><br />
+    Nulla iaculis ipsum sit arnet leo euismodmaximus. Nullam eu justo
+    <br /><br />
+    <b>Quick Links</b>
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Sevice</a></li>
+      <li><a href="">Appointment</a></li>
+    </ul>
+    <b>Follow Us</b>
+    <ul>
+      <li><i class="fa-brands fa-facebook"></i></li>
+      <li><i class="fa-brands fa-google-plus-g"></i></li>
+      <li><i class="fa-brands fa-twitter"></i></li>
+      <li>
+        <i><i class="fa-brands fa-invision"></i></i>
+      </li>
+    </ul>
+    Copyright Hoc Web Chuan All Right Reserved.
+    <br />
+    ===============================================================================================================================
+    <h3>CONTAC US</h3>
+    <b>Contact Info</b>
+    <ul>
+      <li><i class="fa-solid fa-map-pin"></i> 321 Awesome street</li>
+      New York, NY 17022
+      <li><i class="fa-regular fa-envelope"></i>info@companynam.com</li>
+      <li><i class="fa-solid fa-phone"></i><a href="">+1 800 123 1234</a></li>
+    </ul>
+
+    <b>Having ANy Query ! Or Book an Appointment</b><br />
+
+    <input type="name" placeholder="Your Name" /><br /><br />
+    <input type="name" placeholder="Your Email" /><br /><br />
+    <input type="name" placeholder="Subject" /><br /><br />
+    <input
+      type="text"
+      placeholder="Message"
+      size="50"
+      aria-setsize="50"
+    /><br /><br />
+    <button>Send Message</button><br />
+    ===============================================================================================================================
+    <br />
+    <img
+      src="data:image/png;base64,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"
+      alt=""
+    />
+    <h3>ABOUT US</h3>
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla sit amet
+    suscippit est. Nulla iaculis ipsum sit ameet leo euismod maximus. Donec
+    malesuda posuere mi, nec scelerique nibh porta eu. Mauris in ultricies
+    mulla. Quisque vitae ipsum quis odio efficitur tincidunt.<br /><br />
+
+    <b>Why Choose Us</b>
+    <ul>
+      <li>✓ Lorem ipsum dokor</li>
+      <li>✓ Nan sed ipsum erat</li>
+      <li>✓ Consectetur adipiscing</li>
+      <li>✓ Donec feugiat ipsum ac</li>
+      <li>✓ Phasellus vulputate</li>
+      <li>✓ Risus autor dignissim</li>
+      <li>✓ Liquan in tortor in</li>
+      <li>✓ Molestie vitae malesuada</li>
+    </ul>
+    ================================================================================================================================<br />
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    <br /><br />
+    <input type="text" placeholder="Enter email here" />
+    <button><i class="fa-regular fa-share-from-square"></i></button>
+    <ul>
+      <li><a href="">About us</a></li>
+      <li><a href="">About me</a></li>
+      <li><a href="">Our Services</a></li>
+      <li><a href="">Contact us</a></li>
+      <br />
+      <li><a href="">Get in touch</a></li>
+      <li><a href="">FAQ's</a></li>
+      <li><a href="">Testimonails</a></li>
+      <li><a href="">Elements</a></li>
+      <li><a href="">Not found</a></li>
+      <br />
+      <li><a href="">Checkout</a></li>
+      <li><a href="">Shopping Cart</a></li>
+      <li><a href="">My Account</a></li>
+      <li><a href="">Login / Register</a></li>
+    </ul>
+    <img
+      src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAlgAAAAzCAMAAAB8FIZeAAAAtFBMVEX///+FmMx+ksnX3O2SotH09PTw8PD5+fmBlcv8/PyVpdLU1NT19fXY2NituNumpqaZmZnm5ua6urrMzMzh4eHBwcGenp6RkZGwsLDq6uqsrKycnJzd3d23t7ekpKTPz8+frtbL0+iKioqDg4O7xeHDzOWzvt6jsdfv+v5vb2/B6vuW2PdMxPN3d3fa8Pzi5/Lp9v08wPOFzfV90vZYWFhjY2Oa1Pab2/guv/LN7/xezPXF5fpZJVs4AAAGeklEQVR4nO2Zi3abuhJAp8QSEJARCCGEedj41SZpmj7uObft///XHXCSJpjkxm2ctKuzs1JjSdUSYms0IgAEQRAEQRAEQRAEQRAEQRAEQRAEQRAEQRB/CPPJcdm89g0Sr8Op9+aYeNPXvkHidTg9qlck1u+Mz/hzwPyxzkmsvxcW+s+By8Y6J7H+XvhoqDkYn4+Vklh/LyQWcRRILOIovJJYu/cQ3r2Pe/XernCkisT6I3gdsZz5BL04nW4mKM5kutl74TWdTjfYYrLZryKx/ghuxBJSBr/QzWFieasPc8/brufzxdybLLbz9fa+PpOT+XaLH1iFLZ4q1tsrgMvHxxk3TfjEW+JBMFx0bOwufQtg77RMH+nwtn60p76iEU18+y0ejID3h+/xYCCah/p8Fa4HaRMA3d9yJYtH/0P245L9uD5ILG81XaFYC9zoJgtntcX9buF0OnV1/T/zjYOF3nretXiyWGfn8Pbj47e7bIJbsUbfkPygSpQZSKjUSDtmAIx7/QWnwTzUYV4piR+mm/FGP9CIiXfK3ozPl+79Wt2rWY9NdlIFt8U/7uz1XLsRi3WLBS9U0pX53A/KOItBpBBawQIXUgFuimtpiY1ivD8bpG7gc7GbhcMi1sRBsZwTvHJOnEW3Ky664vna8047j7ztZj6/Lt1VPVmsC/j86ezq86fzf87h7NP5cEQt/pay9iMT6C+NdstGZE1jcihkPGiaxKA1l1nYFCYxIpaSpWVTtcOIxNAW6SpTQS6DLxIqKLIId4ClHTTMU1iqukxAGR2LMjcB5CaDIca3Uvq5ad63TLt5FkUSgjYHnbe8jHFngYilOOL7uJ3P2mjI64z9R9raCL+e6S/V2HN5Ca7FSqScmRq6KQIorM10kqZLm+hIJFFkdJEWumrqnVh2pmomm2VY22WwW1QH5lheF7HWp55z+sHp7Vn3gWq6Ou018raL7Wbx5k7V08T6+M+ni7N/4b+Xn+EjXFx2P4MRLY3036dtyoRkOURho7Vwl1hgBrEBpySFsop4mmshIldCnCjRVALkoF34Tsp3HB932bIunhu0t7AS8nLQME9UkVucYXRAKKX8OtAj8a2FNqi14ZBYqDEctqwKsDcRWZ6rANI6LcJ8L3Ra3GdCA4a3kNucAW+KLrxFY4/lRdiJ5WpwGWi8lvibc16nJnUjnMS4UGlZ+VHeyrzpAjGKVaXQagEmjCwuz16pnxALM6jNanVy1x5n/cHZ1XueM90cLFYXsf49g49fz+ECvn29uLwcZiNdxHofCGuUYQVEbqBVadtAQFwPPUCxtJr5vMbwghOg8gLFwoc9G7TrI1ZaQxLwqMx8nLMMpcpGxMqDbrYkr3uxhB8lwh9qikP0cb92eRRgyKwZPgNXqwx34SLkeVPm2sQF89XQGJQKbARRPMNQm7N4piOMkH499lhehFux6qwXS+edWDg8lL8GGYpKl2Xu4hzgNtntlSiWViiWhhbFyn9BLDwWTt6snDW28k66RAr3wen6JqPq8qx+lzw5LMe6uvj6DSMWinX17eteKr/s1k6QpjKQYWtzlSW4QqSI3VQPg0Clg8xPkkrpVORuXemiCVQV76nQ51jMCMNTpesGtzKJEcuIvT2zQNMijjFqGVihVeDXZdYs9yat9Qud4nh0krAM01gTajELUEfGUW0pUKzAptlwyUR5yTH0+gYqDAYqUoXIUhzW85z6D+darARsDFV3XZjItkXS5QyyKM0sVHGq3co3UgiUC4yUpTQCZlnrVlxD0meKPyeW06Xn27XjzFedPbgPOtverAlGLKyarhxnujrkVOhfwuV337/C0+ElvP3+fTit3cP2MQcXmBuKwFUx5yEwhVfN3szgZoVZtgDuhhzPfdg2ZNyFYS7mY0EMTNsut+c6jPGb9d1gNhTLhv3xMcaeRchZCBZStR+x4u6QwHA8obIWj5yxz11Xd336loWusowHpR4mcAAB1mjede8yxYISb1DxWO1t8S/EdY4VyNlMjp15HsSKu2H2ULE2886j9XqKZ78Nfvalp32g6q8W6wUK5a1uqp4k1u+E/j+H6x43+qV3PL81P/uCFJf93bXwU2/evd2Lde/mRfz9+oeq/gyx/nrob4XEUSCxiKNAYhFHgcQijgKJRRwFl7PngI++Lpk4x4XE+o3x3edgPO6dHJkPLzxXBEEQBEEQBEEQBEEQBEEQBEEQBEE8wv8AiFeJeWLKhmUAAAAASUVORK5CYII="
+      style="height: 100; width: 50"
+    />
+    <br />
+    © Copyringht Hoc Web Chuan All Right Reserved
+  </body>
+</html>
